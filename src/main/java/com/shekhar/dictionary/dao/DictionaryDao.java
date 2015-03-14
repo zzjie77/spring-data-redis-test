@@ -21,10 +21,12 @@ public class DictionaryDao {
 
 	public Long addWordWithItsMeaningToDictionary(String word, String meaning) {
 		Long index = redisTemplate.opsForList().rightPush(word, meaning);
+		redisTemplate.getConnectionFactory().getConnection();
 		return index;
 	}
 
 	public List<String> getAllTheMeaningsForAWord(String word) {
+		// opsForList返回ListOperations操作List，还可以返回opsForSet,opsForHash,opsForValue等
 		List<String> meanings = redisTemplate.opsForList().range(word, 0, -1);
 		return meanings;
 	}

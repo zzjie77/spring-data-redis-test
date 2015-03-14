@@ -1,11 +1,13 @@
 package com.shekhar.dictionary.config;
 
+import com.shekhar.dictionary.model.User;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.StringRedisTemplate;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
@@ -30,6 +32,7 @@ public class LocalRedisConfig {
 	@Bean
 	public StringRedisTemplate redisTemplate(){
 		StringRedisTemplate redisTemplate = new StringRedisTemplate(jedisConnectionFactory());
+		redisTemplate.setHashValueSerializer(new GenericToStringSerializer<User>(User.class));
 		return redisTemplate;
 	}
 }
