@@ -58,7 +58,7 @@ public class LocalRedisConfigTest {
 		User user2 = new User("user2ID", "User 2");
 
 		// userdao.add(user)
-		// 
+		// 直接保存对象需要先设置Serialzer: redisTemplate.setHashValueSerializer(new GenericToStringSerializer<User>(User.class));
 		redisTemplate.opsForHash().put(user1.getObjectKey(), user1.getKey(), user1);
 		redisTemplate.opsForHash().put(user2.getObjectKey(), user2.getKey(), user2);
 		// hkey field value
@@ -66,12 +66,12 @@ public class LocalRedisConfigTest {
 		// "User" "user2Id" user2.toString
 
 		// 从redis中读取对象 userdao.get()
-//		User user3 = (User) redisTemplate.opsForHash().get(user1.getObjectKey(), user1.getKey());
-//		System.out.println(user3);
+		User user3 = (User) redisTemplate.opsForHash().get(user1.getObjectKey(), user1.getKey());
+		System.out.println(user3);
 
-//		redisTemplate.opsForHash().delete(user1.getObjectKey(), user1.getKey());
-//		user3 = (User) redisTemplate.opsForHash().get(user1.getObjectKey(), user1.getKey());
-//		System.out.println(user3);
+		redisTemplate.opsForHash().delete(user1.getObjectKey(), user1.getKey());
+		user3 = (User) redisTemplate.opsForHash().get(user1.getObjectKey(), user1.getKey());
+		System.out.println(user3);
 	}
 
 

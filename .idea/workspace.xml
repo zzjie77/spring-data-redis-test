@@ -42,8 +42,8 @@
       <file leaf-file-name="LocalRedisConfigTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/shekhar/dictionary/config/LocalRedisConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3898305" vertical-offset="670" max-vertical-offset="1275">
-              <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.83898306" vertical-offset="570" max-vertical-offset="1275">
+              <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#948#949#0" expanded="true" />
@@ -886,12 +886,12 @@
       <created>1426310537187</created>
       <option name="number" value="Default" />
       <updated>1426310537187</updated>
-      <workItem from="1426310543343" duration="9062000" />
+      <workItem from="1426310543343" duration="9287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9062000" />
+    <option name="totallyTimeSpent" value="9287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1050" extended-state="0" />
@@ -1064,8 +1064,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/shekhar/dictionary/config/LocalRedisConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3898305" vertical-offset="670" max-vertical-offset="1275">
-          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.83898306" vertical-offset="570" max-vertical-offset="1275">
+          <caret line="71" column="46" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#948#949#0" expanded="true" />
